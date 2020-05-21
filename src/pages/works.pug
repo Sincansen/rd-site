@@ -1,0 +1,44 @@
+extends ../pug/layout.pug
+
+block meta
+  title Рекомендации
+  meta(name='description', content='')
+
+block content
+  h2.recommend__title Наши рекомендации
+  .recommend
+
+    .recommend__blog
+      p.recommend__blog-title Новая статья в блоге
+      p.recommend__blog-descr Посмотрите, как чтение книг меняет восприятие человека.
+      a.recommend__blog-link Читать статью
+
+    .recommend__book
+      p.recommend__book-title Книга осени!
+      p.recommend__book-descr Проголосуй за лучшую книгу этой осени
+
+    .recommend__photo
+      p.recommend__photo-title Наши подборки ваших лучших фотографий у нас
+
+    .recommend__opinion
+      p.recommend__opinion-title Нам важно ваше мнение!
+      p.recommend__opinion-descr Ставьте пальцы вверх , мы  хотим знать ваше мнение
+      a.btn Проголосовать
+
+
+    .recommend__kids
+      p.recommend__kids-title Книги для детей
+      p.recommend__kids-descr У нас появился новый раздел, в котором мы подбираем книги для юных читателей
+
+    .recommend__oldbook
+      p.recommend__oldbook-title У вас еcть старые книги?
+      p.recommend__oldbook-descr Приносите их нам и обменяйте на новые.
+
+    .recommend__present
+      p.recommend__present-title Книга в подарок!
+      p.recommend__present-descr При вашем новом заказе мы подарим вам книгу
+      +mini-card('Путеводитель по лжи', 'book.html', 'img/books/putevoditel-po-lzhi.png', 'Критическое мышление в эпоху постправды')
+
+  +banner()
+
+

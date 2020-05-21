@@ -1,0 +1,30 @@
+.catalog {
+  &__block {
+    display: flex;
+    flex-wrap: wrap;
+    // width: 1200px;
+    justify-content: center;
+    height: 100%;
+    padding: 0;
+    margin: 0 auto;
+    margin-top: 40px;
+
+    @media (min-width: 1200px) {
+      width: 1170px;
+    }
+
+    .mini-card {
+      width: 340px;
+      display: flex;
+      justify-content: center;
+
+      @media (min-width: 768px) and (max-width: 1199px) {
+        width: 340px;
+      }
+
+      @media (min-width: 1200px) {
+        width: 25%;
+      }
+    }
+  }
+}

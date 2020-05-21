@@ -1,0 +1,43 @@
+extends ../pug/layout.pug
+
+block meta
+  title Главная
+  meta(name='description', content='')
+
+block content
+
+  section.catalog
+    .tabs
+      ul.tabs__list
+        li.tabs__item
+          a.tabs__link(href='/') Все фото
+        li.tabs__item
+          a.tabs__link(href='/') Портретная
+        li.tabs__item
+          a.tabs__link(href='/') Свадебная
+        li.tabs__item
+          a.tabs__link(href='/') Спортивная
+        li.tabs__item
+          a.tabs__link(href='/') Творчество
+        li.tabs__item
+          a.tabs__link(href='/') Романтическая
+        li.tabs__item
+          a.tabs__link(href='/') Дизайн
+
+    .catalog__block
+      +mini-card('', 'img/books/maxPhoto1.jpg', 'img/books/miniPhoto1.jpg', '', '')
+      +mini-card('', 'img/books/maxPhoto2.jpg', 'img/books/miniPhoto2.jpg', '', '')
+      +mini-card('', 'img/books/maxPhoto3.jpg', 'img/books/miniPhoto3.jpg', '', '')
+      +mini-card('', 'img/books/maxPhoto4.jpg', 'img/books/miniPhoto4.jpg', '', '')
+      +mini-card('', 'img/books/maxPhoto5.jpg', 'img/books/miniPhoto5.jpg', '', '')
+      +mini-card('', 'img/books/maxPhoto6.jpg', 'img/books/miniPhoto6.jpg', '', '')
+      +mini-card('', 'img/books/maxPhoto7.jpg', 'img/books/miniPhoto7.jpg', '', '')
+      +mini-card('', 'img/books/maxPhoto8.jpg', 'img/books/miniPhoto8.jpg', '', '')
+
+    .pagination
+      a.pagination__item(href='/') 1
+      a.pagination__item(href='/') 2
+      a.pagination__item(href='/') 3
+      a.pagination__item(href='/') 4
+      a.pagination__item(href='/') 5
+

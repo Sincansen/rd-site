@@ -1,0 +1,19 @@
+.social__btn {
+  display: flex;
+  flex-direction: row;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  //color: $main-color;
+
+  &:hover,
+  &:focus {
+    color: $main-color;
+  }
+
+  span {
+    padding: 0 10px;
+
+  }
+}
+

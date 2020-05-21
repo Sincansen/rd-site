@@ -1,0 +1,8 @@
+.preview {
+  display: flex;
+  flex-direction: column;
+
+  &__screen {
+    margin-top: 10px;
+  }
+}

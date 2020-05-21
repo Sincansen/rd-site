@@ -1,0 +1,70 @@
+include mixins.pug
+
+doctype html
+html(class='page  no-js', lang='ru')
+
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+
+    block meta
+      title Home
+
+    block head
+      link(rel='stylesheet', href='css/style.css')
+      script.
+        document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+
+  body.page
+    noscript У вас отключен JavaScript. Это пугает.
+
+    .page__inner
+      .page__content
+
+        header.page-header
+          .page-header__inner
+            p.page-header__open-time  Фотограф Марина Рудакова
+
+            nav.main-nav
+              ul.main-nav__list
+                li.main-nav__item
+                  a(href='index.html') Главная
+                li.main-nav__item.main-nav__item--activ
+                  a(href='index.html') Работы
+                li.main-nav__item
+                  a(href='index.html') Услуги
+                li.main-nav__item
+                  a(href='index.html') Контакты
+
+            nav.main-burger
+              a#toggler.toggler(href='')
+                span
+            ul#main.main
+              li.main__item
+                a(href='index.html') Главная
+              li.main__item
+                a(href='index.html') Работы
+              li.main__item
+                a(href='index.html') Услуги
+              li.main__item
+                a(href='index.html') Контакты
+
+        block content
+          p Cодержимое
+
+
+      footer.page-footer
+        .page-footer__inner
+          p.page-footer__open-time  Фотограф Марина Рудакова
+          nav.main-nav.main-nav--footer
+              ul.main-nav__list
+                li.main-nav__item
+                  a(href='index.html') Главная
+                li.main-nav__item
+                  a(href='index.html') Работы
+                li.main-nav__item.main-nav__item--contacts
+                  a(href='index.html') Услуги
+
+    block page-bottom
+      script(src='js/vendors.min.js')
+      script(src='js/script.min.js')

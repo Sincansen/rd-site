@@ -1,0 +1,43 @@
+.form {
+  display: grid;
+  grid-template-columns: repeat(1fr 1fr 1fr);
+  grid-gap: 20px;
+  grid-template-areas: "email input action";
+  margin-bottom: 20px;
+
+  @media (min-width: 767px) and (max-width: 1199px) {
+    grid-template-columns: repeat(1fr 1fr);
+    grid-gap: 20px;
+    grid-template-areas:
+      "email input"
+      "action .";
+  }
+
+    @media (min-width: 320px) and (max-width: 767px) {
+    grid-template-columns: repeat(1fr);
+    grid-gap: 20px;
+    grid-template-areas:
+      "email"
+      "input"
+      "action";
+  }
+
+  &__title {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 70px;
+  }
+
+  &__email {
+    grid-area: email;
+  }
+
+  &__input {
+    grid-area: input;
+  }
+
+  &__action {
+    grid-area: action;
+    width: 100%;
+  }
+}
