@@ -55,7 +55,7 @@
   },
   "dependencies": {
     "svg4everybody": "^2.1.9",
-    "swiper": "^4.5.0"
+    "swiper": "^6.5.1"
   },
   "husky": {
     "hooks": {
